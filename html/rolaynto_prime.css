@@ -1,0 +1,208 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-image: url("../Images/Linrang_X/Rolaynto Prime/Rolaynto.jpg");
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    align-items: center;
+    padding-top:40px;
+    font-family: Space mono, Arial, Helvetica, sans-serif;
+}
+#container{
+    background-color: rgba(86, 196, 235, 0.712);
+    text-align: center;
+    width:80% ;
+    margin:0 auto;
+    overflow:hidden; 
+}
+/*navbar*/
+nav{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    height:50px;
+    background-color: brown;
+    position: fixed;
+    width:inherit ;
+    top:0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 5px 10px black ;
+    
+}
+.nav_main{
+    display:flex;
+    gap:100px;
+    list-style-type: none;
+}
+.nav_second{
+    position: absolute;
+    display: none;
+    z-index: 1;
+    background-color: brown;
+    min-width: 100px;
+    align-items: center;
+    box-shadow: 0 5px 10px black ;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+nav li{
+    font-family: Orbitron, Arial, Helvetica, sans-serif;
+    color:rgb(235, 176, 176);
+}
+nav li a{
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: white;
+    border: 2px solid rgb(36, 10, 10);
+    border-radius:5px;
+    padding:14px;
+    align-items: center;
+}
+.nav_item a:hover{
+    color:rgb(248, 247, 181);
+}
+.nav_item:hover .nav_second{
+    display:block;
+list-style-type:none;
+top:100%;
+}
+.nav_second li{
+    border-top: 1px solid black;
+    padding: 10px 0;
+}
+.nav_second a{
+    display:block;
+    
+}
+.stuck{
+    margin-top: 15px;
+}
+header{
+    width:80%;
+}
+/*main content*/
+h2{
+    font-family: Orbitron, Arial, Helvetica, sans-serif;
+    font-size: 70px;
+    margin:20px;
+    color:rgb(146, 226, 71);
+}
+.rolaynto{
+    width:800px;
+    border-radius:10px;
+    box-shadow:5px 5px 5px rgb(0, 0, 0);
+}
+.rolayntoimg{
+    background-color: rgb(86, 86, 134);
+    border:3px solid black;
+    border-radius: 10px;
+    width:860px;
+    padding:30px;
+    margin:0 auto;
+}
+.text{
+    font-family: Space mono,Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color:white;
+    width:800px;
+    margin:0 auto;
+    background-color: rgb(164, 255, 108);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 3px solid black;
+    border-top: none;
+}
+.features{
+    float:left;
+    background-color: rgb(128, 137, 117);
+    width:550px;
+    margin-top: 30px;
+    border:3px solid rgb(146, 226, 71);
+    font-family: space mono,Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color:rgb(242, 213, 255);
+}
+.features h2{
+    margin:10px;
+    font-size: 30px;
+    color:rgb(223, 170, 245);
+    border-bottom: 4px solid black;
+}
+.resources th{ 
+font-family: orbitron,Arial, Helvetica, sans-serif;
+size: 30px;
+color:rgb(223, 170, 245);
+}
+.resources{
+    border:3;
+    background-color: rgb(38, 38, 60);
+    border-radius: 10px;
+    margin:0 auto;
+    margin-top: 15px;
+    border-collapse:collapse;
+    border: 3px solid #f8c076;
+}
+th, td {
+    border: 1px solid #f8c076;
+    padding:7px;
+}
+.featuresimg{
+    float:right;
+    background-color: rgb(38, 38, 60);
+    margin-top: 73px;
+    height:600px;
+    align-items: center;
+    border: 3px solid rgb(146, 226, 71);
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.featuresimg img{
+    margin-top:40px;
+    width: 90%;
+}
+.planet_type{
+    width:500px;
+    border:10px solid rgb(146, 226, 71);
+    background-color: rgb(71, 212, 177);
+    color:rgb(165, 47, 233);
+    margin:0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: space mono, Arial, Helvetica, sans-serif;
+    border-radius: 40px;
+    box-shadow: 5px 5px 5px white;
+}
+.planet_type h2{
+    color:rgb(209, 94, 247);
+    font-size: 40px;
+    box-shadow: 5px 5px 5px white;
+    border-bottom-right-radius: 10px;
+}
+.planet_type h3{
+    font-size: 35px;
+}
+.planet_type h4{
+    font-size: 30px;
+}
+/*footer*/
+.endfloat{
+    clear:both;
+}
+.survey{
+    position: fixed;
+    bottom:20px;
+    right: 1px;
+    padding:10px;
+    border-radius: 10px;
+    background-color: rgb(109, 165, 165);
+}
+.survey a{
+    color:white;
+    text-decoration: none;
+    font-weight: 700;
+}

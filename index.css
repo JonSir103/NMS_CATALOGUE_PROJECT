@@ -1,0 +1,163 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    background-image: url("Images/NMS.webp");
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    align-items: center;
+    padding-top:40px;
+    font-family: monospace,Arial, Helvetica, sans-serif;
+}
+#container{
+    background-color: rgba(251, 231, 118, 0.719);
+    text-align: center;
+    width:80% ;
+    margin:0 auto;
+    overflow:hidden;
+
+}
+/*main content*/
+h1{
+    font-family:Orbitron, Arial, Helvetica, sans-serif;
+    font-size:100px;
+}
+p{
+    font-size: 30px;
+    color:white;
+    font-family:monospace, Arial, Helvetica, sans-serif;
+}
+.underline{
+    text-decoration:underline ;
+}
+.nmsintro{
+    float:left;
+    width:400px;
+    padding:10px;
+    border:3px solid maroon;
+    background-color: rgba(155, 69, 19, 0.548);
+    border-radius: 10px;
+}
+.right_pictures{
+    float:right;
+    width:750px;
+    background-color: rgba(33, 49, 105, 0.548);
+    border-radius: 10px;
+    border:3px solid black;
+    margin-top: 50px;
+
+}
+.right_pictures img{
+    width: 750px;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+/*navbar*/
+nav{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    height:50px;
+    background-color: brown;
+    position: fixed;
+    width:inherit ;
+    top:0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 5px 10px black ;
+    
+}
+.nav_main{
+    display:flex;
+    gap:100px;
+    list-style-type: none;
+}
+.nav_second{
+    position: absolute;
+    display: none;
+    z-index: 1;
+    background-color: brown;
+    min-width: 100px;
+    align-items: center;
+    box-shadow: 0 5px 10px black ;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+nav li{
+    font-family: Orbitron, Arial, Helvetica, sans-serif;
+    color:rgb(235, 176, 176);
+}
+nav li a{
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: white;
+    border: 2px solid rgb(36, 10, 10);
+    border-radius:5px;
+    padding:14px;
+    align-items: center;
+}
+.nav_item a:hover{
+    color:rgb(248, 247, 181);
+}
+.nav_item:hover .nav_second{
+    display:block;
+list-style-type:none;
+top:100%;
+}
+.nav_second li{
+    border-top: 1px solid black;
+    padding: 10px 0;
+}
+.nav_second a{
+    display:block;
+    
+}
+.stuck{
+    margin-top: 15px;
+}
+header{
+    width:80%;
+}
+/*more main*/
+.economy{
+    float: left;
+    margin-top: 40px;
+    background-color: rgb(28, 25, 37);
+    width:300px;
+    border:3px solid rgb(255, 153, 0);
+    color: rgb(241, 190, 112);
+    font-size: 20px;
+        margin-left: 20px;
+        border-radius: 30px;
+        list-style-type: none;
+}
+.economy h2{
+    color: rgb(255, 153, 0);
+    font-weight:700;
+    font-family: Orbitron, Arial, Helvetica, sans-serif;
+    padding: 5px;
+    font-size: 25px;
+    border-bottom: 1px solid yellow;
+}
+.economy li:last-of-type{
+    margin:20px;
+}
+.endfloat{
+    clear:both;
+}
+.survey{
+    position: fixed;
+    bottom:20px;
+    right: 1px;
+    padding:10px;
+    border-radius: 10px;
+    background-color: rgb(109, 165, 165);
+}
+.survey a{
+    color:white;
+    text-decoration: none;
+    font-weight: 700;
+}

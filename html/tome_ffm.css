@@ -1,0 +1,196 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-image: url("../Images/Linrang_X/Tome_53IU9/tome_53IU9.jpg");
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    align-items: center;
+    padding-top:40px;
+    font-family: Space mono, Arial, Helvetica, sans-serif;
+}
+#container{
+    background-color: rgba(43, 56, 84, 0.719);
+    text-align: center;
+    width:80% ;
+    margin:0 auto;
+    overflow:hidden; 
+}
+/*navbar*/
+nav{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    height:50px;
+    background-color: brown;
+    position: fixed;
+    width:inherit ;
+    top:0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 5px 10px black ;
+    
+}
+.nav_main{
+    display:flex;
+    gap:100px;
+    list-style-type: none;
+}
+.nav_second{
+    position: absolute;
+    display: none;
+    z-index: 1;
+    background-color: brown;
+    min-width: 100px;
+    align-items: center;
+    box-shadow: 0 5px 10px black ;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+nav li{
+    font-family: Orbitron, Arial, Helvetica, sans-serif;
+    color:rgb(235, 176, 176);
+}
+nav li a{
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: white;
+    border: 2px solid rgb(36, 10, 10);
+    border-radius:5px;
+    padding:14px;
+    align-items: center;
+}
+.nav_item a:hover{
+    color:rgb(248, 247, 181);
+}
+.nav_item:hover .nav_second{
+    display:block;
+list-style-type:none;
+top:100%;
+}
+.nav_second li{
+    border-top: 1px solid black;
+    padding: 10px 0;
+}
+.nav_second a{
+    display:block;
+    
+}
+.stuck{
+    margin-top: 15px;
+}
+header{
+    width:80%;
+}
+/*main content*/
+h2{
+    font-family: Orbitron, Arial, Helvetica, sans-serif;
+    color:rgb(242, 209, 76);
+    font-size: 45px;
+    background-color: black;
+    border:1px solid yellow;
+    width:200px;
+    margin:40px auto;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgb(246, 229, 119);
+}
+.flora_img_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    margin-bottom: 20px;
+}
+.flora_left_text{
+    width:500px;
+    margin-bottom: 10px;
+}
+.flora_stats{
+    width:300px;
+    border: 2px solid rgb(250, 250, 115);
+    margin:0 auto;
+    background-color: rgb(102, 91, 114);
+    border-radius: 20px;
+    list-style-type: none;
+    color: rgb(254, 216, 63);
+}
+.flora_stats_inner{
+    list-style-type: none;
+}
+.flora_stats_inner li{
+    border-bottom: 2px solid rgb(50, 50, 50);
+    font-size: 15px;
+}
+.flora_stats_inner li:last-of-type{
+    border-bottom:none;
+    font-size: 15px;
+}
+.flora_stats_inner h4{
+    font-size: 20px;
+    color:rgb(251, 198, 64);
+}
+.flora_img{
+    width:600px;
+    background-color: rgb(1, 8, 34);
+    box-shadow: -5px 0 10px black;
+    border-right: 10px solid rgb(252, 238, 113);
+}
+.flora_img img{
+    width:500px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 4px solid white;
+    border-radius: 10px;
+}
+.flora_grid{
+    display: grid;
+    grid-template-rows: 1fr ;
+}
+h3{
+    color:orange;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: Orbitron, Arial, Helvetica, sans-serif;
+}
+ul h3{
+    color:rgb(251, 175, 33);
+    font-size: 25px;
+    font-weight: 700;
+    font-family: Space Mono, Arial, Helvetica, sans-serif;
+    margin-bottom: -20px;
+}
+.products, .ftype{
+    color: white;
+    font-size: 20px;
+    font-weight: 550;
+    border-bottom: 5px solid rgb(50, 50, 50);
+}
+.ftype h3{
+    margin:10px;
+}
+/*footer*/
+.endfloat{
+    clear:both;
+}
+.survey{
+    position: fixed;
+    bottom:20px;
+    right: 1px;
+    padding:10px;
+    border-radius: 10px;
+    background-color: rgb(109, 165, 165);
+}
+.survey a{
+    color:white;
+    text-decoration: none;
+    font-weight: 700;
+}
+/*img grid control*/
+@media(max-width:1300px) {
+    .flora_img_grid{
+        grid-template-columns: 1fr;
+    }
+}
